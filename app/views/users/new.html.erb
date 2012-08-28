@@ -3,11 +3,13 @@
 <div class="container">
 	<%= form_for(@user) do |f| %>
 
-	  <%= f.label :name %>
-      <%= f.text_field :name %>
+      <%= f.text_field :name, placeholder: "Name" %>
 
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+      <%= f.text_field :email, placeholder: "Email" %>
+
+      <%= f.password_field :password, placeholder: "Password" %>
+
+      <%= f.password_field :password_confirmation, placeholder: "Confirm Password" %>
 
 <%= link_to 'Back', users_path %>
 
