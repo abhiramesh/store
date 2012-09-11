@@ -1,25 +1,25 @@
-<%= form_for(@user) do |f| %>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+<% form_for (@user) do |f| %>
 
-      <ul>
-      <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+
+
+<div class="container" align="center">
+  <div class="div2" align="center">
+    <h2 align="center"> You are a ...</h2>
+    <div class="container" align="center">
+      <div class="row" align="center">
+        <div class="span6">
+          <h9>Guy</h9>
+          <label for="user_gender_guy"><img src="http://i.imgur.com/bpIMo.png" class="new" width="200" height="500"></label>
+          <input checked="checked" id="user_gender_guy" name="user[gender]" type="radio" value="Guy" /> 
+        </div>
+        <div class="span6">
+          <h9>Girl</h9>
+          <label for="user_gender_girl"><img src="http://i.imgur.com/xpA1S.png" class="new" width="200" height="500"></label>
+          <input checked="checked" id="user_gender_girl" name="user[gender]" type="radio" value="Girl" />
+        </div>
+      </div>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <%= f.submit "Next" %>
+  </div> 
+</div>
 <% end %>

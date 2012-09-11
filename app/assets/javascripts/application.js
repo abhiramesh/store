@@ -13,3 +13,22 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= require jquery.simpleImageCheck-0.4.min
+
+//$('.new').live('change', function() {
+//	$(this).parents('form:first').submit();
+//});
+
+//$('#watches').simpleImageCheck({
+  //image: '/images/rails.png',
+  //imageChecked: '/images/rails.png',
+  //afterCheck: function(isChecked) {
+    //if (isChecked) {
+      // do something
+    //}
+  //}
+//});
+
+    $('.new1').click(function() {
+        $(this).toggleClass('active');
+    });    

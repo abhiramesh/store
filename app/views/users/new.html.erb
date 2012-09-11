@@ -1,17 +1,2 @@
-<h2>Tell us who you are!</h2>
-
-<div class="container">
-	<%= form_for(@user) do |f| %>
-
-      <%= f.text_field :name, placeholder: "Name" %>
-
-      <%= f.text_field :email, placeholder: "Email" %>
-
-      <%= f.password_field :password, placeholder: "Password" %>
-
-      <%= f.password_field :password_confirmation, placeholder: "Confirm Password" %>
-
-<%= link_to 'Back', users_path %>
-
-<% end %>
-</div>
+<%= render 'form' %>
+	

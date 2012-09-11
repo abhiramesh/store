@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
   <body>
     <div class="div1"  align="center"> 
       <img src="http://i.imgur.com/vD3cp.jpg" height=100% width=100%>
+      <div class="div6"> 
+      		<%= form_for(@user) do |f| %>
+  			<%= f.email_field :email, placeholder: "Email" %><%= f.submit "Let's Go!", :class => "button", :style => "font-size:1.6em"%>
+  			<% end %>
+  	  </div>
+  
+  
     </div> 
     <div class="div2" align="center">	
       	<div class="container">
@@ -28,41 +33,57 @@
       		</div>
       		<div class="row">
       			<div class="span4">
-      				<p> Subscribe to our club and have us order for you <i>or</i> just pick and choose what you want from our online store! </p>
+      				<p> <b>Subscribe to our club and have us order for you <i>or</i> just pick and choose what you want from our online store!</b> </p>
       			</div>
       			<div class="span4">
-					<p> Free shipping, free returns. Think of it as a no hassle, no risk way to shop!</p>
+					<p><b>Free shipping, free returns. Think of it as a no hassle, no risk way to shop!</b></p>
 				</div>
 				<div class="span4">
-					<p> Try what you buy. After a week, return what you don't want and buy the things you love. It's <i> that </i> simple! </p>
+					<p><b> Try what you buy. After a week, return what you don't want and buy the things you love. It's <i> that </i> simple!</b> </p>
 				</div>
       	</div>
 	</div>
 	<div class="div3" align="center">
-		<div class="container">
-		<h2> What are you getting</h2>      
-		<h3> Like we said...stuff you love! </h3>
-		<ul class="thumbnails">
-		  <li class="span4">
-		    <a href="#" class="thumbnail">
-		      <img src="http://storage.diesel.com/assets/collection/diesel/timeframes/DZ4254_zoom.jpg" class="img-polaroid" alt="">
-		    </a>
-		  </li>
-		  <li class="span4">
-		  	<a href="#" class="thumbnail">
-		      <img src="http://www.coolgiftsforguys.net/wp-content/uploads/2010/11/Syma-S107-Remote-Controlled-Helicopter.jpg" alt="">
-		    </a>
-		  </li>
-		  <li class="span4">
-		  	<a href="#" class="thumbnail">
-		      <img src="http://ecx.images-amazon.com/images/I/91D869LqJJL._SL1500_.jpg" alt="">
-		    </a>
-		  </li>
-		  
+		<div class="div4" align="center">
+			<h2 align="center"> What are you getting</h2>      
+			<h3 align="center"> Like we said...stuff you love! </h3>
+			<div class="container">
+			<ul class="thumbnails">
+			  <li class="span4">
+			    <a href="#" class="thumbnail">
+			      <img src="http://i.imgur.com/wT3Ap.jpg" class="img-polaroid" alt="">
+			    </a>
+			  </li>
+			  <li class="span4">
+			  	<a href="#" class="thumbnail">
+			      <img src="http://i.imgur.com/pJNHC.jpg" alt="">
+			    </a>
+			  </li>
+			  <li class="span4">
+			  	<a href="#" class="thumbnail">
+			      <img src="http://i.imgur.com/N4fOH.jpg" alt="">
+			    </a>
+			  </li>
+			  <li class="span4">
+			  	<a href="#" class="thumbnail">
+			      <img src="http://i.imgur.com/pPIv3.png" alt="">
+			    </a>
+			  </li>
+			  <li class="span4">
+			  	<a href="#" class="thumbnail">
+			      <img src="http://i.imgur.com/Rx1hp.png" alt="">
+			    </a>
+			  </li>
+			  <li class="span4">
+			  	<a href="#" class="thumbnail">
+			      <img src="http://i.imgur.com/68Xbp.png" alt="">
+			    </a>
+			  </li>
 
 
-		</ul>
 
+			</ul>
+		</div>
 		
 
 			</div>

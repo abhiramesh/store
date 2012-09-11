@@ -1,10 +1,29 @@
 Store::Application.routes.draw do
+
+  devise_for :users, :controllers => { :registrations => "registration" } do
+    get '/users/sign_out' => 'devise/sessions#destroy', :as => "destroy_user_session"
+    
+end
+
+ 
+
+  resources :preferences
+
+  resources :brands
+
+  resources :likes
+
+  resources :categories
+   
   resources :users
 
-  get "static_pages/home"
   root to: 'static_pages#home'
+
   
-  match '/signup', to: 'users#new'
+
+
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
