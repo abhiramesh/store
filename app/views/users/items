@@ -1,0 +1,7 @@
+<%= form_for(@user) do |f| %>
+<% if @user.gender == "Guy"%>
+<% render :partial => 'guyitems' %>
+<% else render :partial => 'girlitems' %>
+<% end %>
+<% end %>
+

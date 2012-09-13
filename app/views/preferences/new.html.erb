@@ -1,0 +1,22 @@
+<%= form_for @preference do |f| %>
+
+<div class="div2" align='center'>
+	<div class="container">
+		<h10 align="center" style="border-bottom:30px"> Your Favorite Brands... </h10>
+	</div>
+	<div class="container" align="center" style="padding-top:20px">
+		<div class="row" align='center'>
+			<% @brands.each do |brand| %>
+			<div class="span2" align="center" style="margin-top:0px">
+				<label for='brand_ids_'>
+					<img src= <%= brand.image %> class="new">
+				</label>
+				<div><%= check_box_tag 'brand_ids[]', brand.id %></div>
+			</div>
+			<% end %>
+		</div>
+		<%= f.submit "Next!", :class => "button1", :style => "font-size:1.6em" %>
+		<%= link_to 'Back', likes_path, :class => 'btn btn-mini'%>
+	</div>
+</div>
+<% end %>

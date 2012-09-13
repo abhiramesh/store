@@ -1,8 +1,8 @@
 Store::Application.routes.draw do
 
-  devise_for :users, :controllers => { :registrations => "registration" } do
+  devise_for :users, :controllers => { :registrations => "registration", omniauth_callbacks: "omniauth_callbacks" } do
     get '/users/sign_out' => 'devise/sessions#destroy', :as => "destroy_user_session"
-    
+
 end
 
  

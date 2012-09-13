@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <div class="div1"  align="center"> 
-      <img src="http://i.imgur.com/vD3cp.jpg" height=100% width=100%>
+    <div class="div8"  align="center">
+      <img src="http://i.imgur.com/KAdEz.jpg" height=100% width=100%>
       <div class="div6"> 
       		<%= form_for(@user) do |f| %>
-  			<%= f.email_field :email, placeholder: "Email" %><%= f.submit "Let's Go!", :class => "button", :style => "font-size:1.6em"%>
+      		<%= link_to image_tag('http://i.imgur.com/p1Ch1.png'), user_omniauth_authorize_path(:facebook)%>
+      			<div><b><i><p>or</p></i></b></div>
+      			<%= link_to "Sign up with Email", new_user_path %>
   			<% end %>
   	  </div>
-  
-  
     </div> 
-    <div class="div2" align="center">	
+    <div class="div8" align="center" style="padding-top:0px">	
       	<div class="container">
       		<h2 align="left"> How we make you happy</h2>      	
       		<div class="row">
       			<div class="span4">
-      				<h3> You Order </h3>
+      				<h3> You Pick </h3>
       				<h4> what you like </h4>      			
       				<img src="http://i.imgur.com/zh3iG.png" style="position:relative;top:24px;">      				
       			</div>
@@ -33,63 +33,43 @@
       		</div>
       		<div class="row">
       			<div class="span4">
-      				<p> <b>Subscribe to our club and have us order for you <i>or</i> just pick and choose what you want from our online store!</b> </p>
+      				<p> <b>Subscribe - just pick and choose from our online store!</b> </p>
       			</div>
       			<div class="span4">
-					<p><b>Free shipping, free returns. Think of it as a no hassle, no risk way to shop!</b></p>
+					<p><b>Free shipping, free returns - A no hassle, no risk way to shop!</b></p>
 				</div>
 				<div class="span4">
-					<p><b> Try what you buy. After a week, return what you don't want and buy the things you love. It's <i> that </i> simple!</b> </p>
+					<p><b> Try what you pick and buy the items you love. </p>
 				</div>
       	</div>
 	</div>
-	<div class="div3" align="center">
-		<div class="div4" align="center">
-			<h2 align="center"> What are you getting</h2>      
-			<h3 align="center"> Like we said...stuff you love! </h3>
-			<div class="container">
-			<ul class="thumbnails">
-			  <li class="span4">
-			    <a href="#" class="thumbnail">
-			      <img src="http://i.imgur.com/wT3Ap.jpg" class="img-polaroid" alt="">
-			    </a>
-			  </li>
-			  <li class="span4">
-			  	<a href="#" class="thumbnail">
-			      <img src="http://i.imgur.com/pJNHC.jpg" alt="">
-			    </a>
-			  </li>
-			  <li class="span4">
-			  	<a href="#" class="thumbnail">
-			      <img src="http://i.imgur.com/N4fOH.jpg" alt="">
-			    </a>
-			  </li>
-			  <li class="span4">
-			  	<a href="#" class="thumbnail">
-			      <img src="http://i.imgur.com/pPIv3.png" alt="">
-			    </a>
-			  </li>
-			  <li class="span4">
-			  	<a href="#" class="thumbnail">
-			      <img src="http://i.imgur.com/Rx1hp.png" alt="">
-			    </a>
-			  </li>
-			  <li class="span4">
-			  	<a href="#" class="thumbnail">
-			      <img src="http://i.imgur.com/68Xbp.png" alt="">
-			    </a>
-			  </li>
-
-
-
-			</ul>
-		</div>
-		
-
+	<div class="div3" align="center" style="padding-top:0px">
+		<div class="div9" align="center">
+			<div style="padding:45px"><h11 align="center"> What are you getting?</h11></div>      
+			<div style="padding-bottom:20px"><h3 align="center"> Like we said...stuff you love! </h3></div>
+			<div class="container" align="center">
+				<div class="row" align="center">	
+					<div class="span4" align="center" style="padding-bottom:10px">
+						<img src="http://i.imgur.com/wT3Ap.jpg" class="new">
+					</div>
+					<div class="span4" align="center" style="padding-bottom:10px">
+						<img src="http://i.imgur.com/pJNHC.jpg" class="new">
+					</div>
+					<div class="span4" align="center" style="padding-bottom:10px">
+						<img src="http://i.imgur.com/N4fOH.jpg" class="new">
+					</div>
+					<div class="span4" align="center" style="padding-bottom:10px">
+						<img src="http://i.imgur.com/EPCFG.jpg" class="new">
+					</div>
+					<div class="span4" align="center" style="padding-bottom:10px">
+						<img src="http://i.imgur.com/nijRk.jpg" class="new">
+					</div>
+					<div class="span4" align="center" style="padding-bottom:10px">
+						<img src="http://i.imgur.com/qfDb1.jpg" class="new">
+					</div>
+				</div>
 			</div>
-
-       
-	</div>
+	  	</div>
 	  </div>
   </body>
 </html>

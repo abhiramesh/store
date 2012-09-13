@@ -1,0 +1,61 @@
+<h1> guy brands </h1>
+<%= form_for(@user) do |f| %>
+<h2 align="center"> Your Favorite Brands... </h2>
+  <div class="container" align='center'>
+    <div class="row" align='center'>
+      <div class="span2" align="center">
+        <label for='user_lacoste'><img src="http://i.imgur.com/2m2sz.png" class="new1" aref="#"></label><%= f.check_box :lacoste %>
+      </div>
+      <div class="span2" align="center">
+        <label for='user_bananarepublic'><img src="http://i.imgur.com/mhNOi.png" class="new1"></label><%= f.check_box :bananarepublic %>
+      </div>
+       <div class="span2" align="center">
+        <label for='user_bonobos'><img src="http://i.imgur.com/iCwtG.png" class="new1"></label><%= f.check_box :bonobos %>
+      </div>
+       <div class="span2" align="center">
+        <label for='user_americanapparel'><img src="http://i.imgur.com/jm57q.png" class="new1"></label><%= f.check_box :americanapparel %>
+      </div>
+      <div class="span2" align="center">
+        <label for='user_ralphlauren'><img src="http://i.imgur.com/DTJzI.png" class="new1"></label><%= f.check_box :ralphlauren %>
+      </div>
+      <div class="span2" align="center">
+        <label for='user_express'><img src="http://i.imgur.com/nePOL.png" class="new1"></label><%= f.check_box :express %>
+      </div>
+      <div class="span2" align="center">
+        <label for='user_hugoboss'><img src="http://i.imgur.com/hoUzJ.png" class="new1"></label><%= f.check_box :hugoboss %>
+      </div>
+      <div class="span2" align="center">
+        <label for='user_handm'><img src="http://i.imgur.com/Gc2Pn.png" class="new1"></label><%= f.check_box :handm %>
+      </div>
+      <div class="span2" align="center">
+        <label for='user_jcrew'><img src="http://i.imgur.com/5h7fp.png" class="new1"></label><%= f.check_box :jcrew %>
+      </div>
+      <div class="span2" align="center">
+        <label for='user_zara'><img src="http://i.imgur.com/ITHVT.png" class="new1"></label><%= f.check_box :zara %>
+      </div>
+      <div class="span2" align="center">
+        <label for='user_brooksbro'><img src="http://i.imgur.com/hqnM0.png" class="new1"></label><%= f.check_box :brooksbro %>
+      </div>
+      <div class="span2" align="center">
+        <label for='user_calvinklein'><img src="http://i.imgur.com/ve9Iu.png" class="new1"></label><%= f.check_box :calvinklein %>
+      </div>
+      <div class="span2" align="center">
+        <label for='user_guess'><img src="http://i.imgur.com/Fx7t9.png" class="new1"></label><%= f.check_box :guess %>
+      </div>
+      <div class="span2" align="center">
+        <label for='user_armani'><img src="http://i.imgur.com/m9XFj.png" class="new1"></label><%= f.check_box :armani %>
+      </div>
+      <div class="span2" align="center">
+        <label for='user_diesel'><img src="http://i.imgur.com/cSNX8.png" class="new1"></label><%= f.check_box :diesel %>
+      </div>
+      <div class="span2" align="center">
+        <label for='user_lucky'><img src="http://i.imgur.com/9WABH.png" class="new1"></label><%= f.check_box :lucky %>
+      </div>
+      <div class="span2" align="center">
+        <label for='user_levis'><img src="http://i.imgur.com/FsQ0c.png" class="new1"></label><%= f.check_box :levis %>
+      </div>
+      <div class="span2" align="center">
+        <label for='user_other' class='new4'><img src="http://i.imgur.com/PWbTO.png" class="new1"></label><%= f.check_box :other %>
+      </div>
+</div>
+<% end %>

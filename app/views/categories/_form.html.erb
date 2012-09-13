@@ -1,0 +1,26 @@
+<%= form_for(@category) do |f| %>
+      <%= f.text_area :name, placeholder: "Name" %>
+      <%= f.text_area :image, placeholder: "Image" %>
+
+ <img src="http://macktactics.com/wp-content/uploads/2012/01/hot-girl12.jpg"/>
+
+
+  <% if @category.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@category.errors.count, "error") %> prohibited this category from being saved:</h2>
+
+      <ul>
+      <% @category.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+
+
+
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

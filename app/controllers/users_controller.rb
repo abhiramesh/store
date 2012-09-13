@@ -48,7 +48,7 @@ class UsersController < ApplicationController
   # PUT /users/1.json
   def update
     @user = User.find(params[:id])
-
+    if @user.update_attributes(params[:user])
     respond_to do |format|
      if @user.update_attributes(params[:user])
         format.html { redirect_to new_like_path, notice: 'User was successfully updated.' }
@@ -57,9 +57,9 @@ class UsersController < ApplicationController
         format.html { render action: "edit" }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
+      end
     end
   end
-
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy

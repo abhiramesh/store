@@ -1,0 +1,41 @@
+<%= form_for(@user) do |f| %>
+<%= f.check_box :hidden %>
+	<div class="container" align='center'>
+      <h2 align="center"> GYUZ You Like to Shop For... </h2>
+
+      <div class="row" align='center'>
+        <div class="span4" align='center'>
+          <label for='user_watches'><img src="http://i.imgur.com/AHlcI.png" class="new"><h8>Watches</h8></label><%= f.check_box :watches %>
+        </div>
+        <div class="span4">
+          <label for='user_shoes'><img src="http://i.imgur.com/dQszf.jpg" class="new"><h8>Shoes</h8></label><%= f.check_box :shoes %>
+        </div>
+        <div class="span4">
+          <label for='user_accessories'><img src="http://i.imgur.com/Uh5eT.jpg" class="new"><h8>Accessories</h8></label><%= f.check_box :accessories %>
+        </div>
+        <div class="span12">
+          <label for='user_formal'><img src="http://i.imgur.com/qSsKp.jpg" class="new"><h8>Suitin' Up!</h8></label><%= f.check_box :formal %>
+        </div>
+        <div class="span4">
+          <label for='user_informal'><img src="http://i.imgur.com/IHn8Z.png" class="new"><h8>Just Chillin'</h8></label><%= f.check_box :informal %>
+        </div>
+        <div class="span4">
+          <label for='user_preppy'><img src="http://i.imgur.com/79VNk.jpg" class="new"><h8>Goin' Out</h8></label><%= f.check_box :preppy %>
+        </div>
+        <div class="span4">
+          <label for='user_athletic'><img src="http://i.imgur.com/BT9W9.png" class="new"><h8>Athletic</h8></label><%= f.check_box :athletic %>
+        </div>
+        <div class="span4">
+          <label for='user_electronics'><img src="http://i.imgur.com/4bm0O.png" class="new"><h8>Electronics</h8></label><%= f.check_box :electronics %>
+        </div>
+        <div class="span4">
+          <label for='user_software'><img src="http://i.imgur.com/NceXl.png" class="new"><h8>Games/Software</h8></label><%= f.check_box :software %>
+        </div>
+        <div class="span4">
+          <label for='user_funstuff'><img src="http://i.imgur.com/YfiLt.png" class="new"><h8>Other Fun Stuff</h8></label><%= f.check_box :funstuff %>
+        </div>
+      </div>
+      <%= f.submit "Next" %>
+    </div>
+  </div>
+  <% end %>

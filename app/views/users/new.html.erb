@@ -1,2 +1,14 @@
-<%= render 'form' %>
+<%= form_for (@user) do |f| %>
+<div class="container" align="center">
+  <div class="div2" align="center">
+	<div style="padding-top:40px"><h9> So, you don't like to sign in with Facebook... </h9></div>
+	<img src="http://thepngproject.s3.amazonaws.com/200_000000/noun_project_83a82614-0aac-40de-89b7-db2c4d209feb.png">
+	<p> No problem, just enter your email! </p>
+	<%= f.email_field :email, placeholder: "Email" %>
+	<div align="center" style="padding-bottom:30px">
+	<%= f.submit "Next!", :class => "button1", :style => "font-size:1.6em" %>
+	</div>
+  </div>
+</div>
+<% end %>
 	
